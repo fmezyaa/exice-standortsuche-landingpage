@@ -69,7 +69,7 @@ export default function Home() {
 
   if (isSubmitted) {
     return (
-      <main className="min-h-screen bg-[#e6223d] flex flex-col items-center justify-center p-8 relative overflow-hidden">
+      <main className="min-h-screen bg-[#72add9] flex flex-col items-center justify-center p-8 relative overflow-hidden">
         <div className="relative z-10 text-center max-w-lg">
           <Image
             src="/images/logo-weiss-rot.png"
@@ -427,7 +427,7 @@ export default function Home() {
                   </select>
                 </div>
 
-                <div>
+                <div className="overflow-hidden">
                   <label htmlFor="verfuegbar" className="block text-sm font-medium text-gray-300 mb-2">
                     Verfügbar ab
                   </label>
@@ -435,7 +435,7 @@ export default function Home() {
                     type="date"
                     id="verfuegbar"
                     name="verfuegbar"
-                    className="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-[#e6223d] focus:ring-2 focus:ring-[#e6223d]/20 transition-all"
+                    className="w-full min-w-0 px-5 py-4 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-[#e6223d] focus:ring-2 focus:ring-[#e6223d]/20 transition-all [&::-webkit-calendar-picker-indicator]:invert"
                   />
                 </div>
               </div>
