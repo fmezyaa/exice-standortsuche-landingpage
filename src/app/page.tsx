@@ -129,7 +129,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#e6223d] rounded-full text-sm text-white mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#72add9] rounded-full text-sm text-white mb-6">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
@@ -166,11 +166,11 @@ export default function Home() {
                   <div className="text-xs md:text-sm text-gray-400 mt-1">wunderschöne Clubs</div>
                 </div>
                 <div className="text-center p-3 md:p-4 bg-white/5 rounded-2xl border border-white/10">
-                  <div className="text-2xl md:text-4xl font-black text-[#e6223d]">15k+</div>
+                  <div className="text-2xl md:text-4xl font-black text-[#72add9]">15k+</div>
                   <div className="text-xs md:text-sm text-gray-400 mt-1">zufriedene Mitglieder</div>
                 </div>
                 <div className="text-center p-3 md:p-4 bg-white/5 rounded-2xl border border-white/10">
-                  <div className="text-2xl md:text-4xl font-black text-white">125+</div>
+                  <div className="text-2xl md:text-4xl font-black text-[#72add9]">125+</div>
                   <div className="text-xs md:text-sm text-gray-400 mt-1">glückliche Mitarbeiter</div>
                 </div>
               </div>
