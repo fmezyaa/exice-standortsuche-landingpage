@@ -110,10 +110,10 @@ export default function Home() {
             height={30}
             className="h-8 w-auto"
           />
-          <div className="hidden md:flex items-center gap-2 text-sm text-[#72add9]">
-            <span className="w-2 h-2 bg-[#72add9] rounded-full animate-pulse"></span>
-            Community Fitness Clubs
-          </div>
+          <a href="#formular" className="hidden md:flex items-center gap-2 text-sm text-[#e6223d] hover:text-white transition-colors">
+            <span className="w-2 h-2 bg-[#e6223d] rounded-full animate-pulse"></span>
+            5.000€ Finderlohn
+          </a>
         </div>
       </header>
 
@@ -247,9 +247,9 @@ export default function Home() {
             </div>
 
             {/* Card 2 */}
-            <div className="group p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-[#e6223d]/50 transition-all">
-              <div className="w-16 h-16 rounded-2xl bg-[#e6223d]/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <svg className="w-8 h-8 text-[#e6223d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="group p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-[#72add9]/50 transition-all">
+              <div className="w-16 h-16 rounded-2xl bg-[#72add9]/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <svg className="w-8 h-8 text-[#72add9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -275,7 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Club Impressions - Placeholder */}
+      {/* Club Impressions */}
       <section className="py-20 px-6 bg-[#1a1a1a]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
@@ -285,23 +285,21 @@ export default function Home() {
             Premium Equipment. Einzigartige Atmosphäre. Community Spirit.
           </p>
 
-          {/* Image Grid Placeholder */}
+          {/* Image Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
               <div
                 key={i}
-                className={`relative aspect-square bg-gradient-to-br from-white/5 to-white/10 rounded-2xl overflow-hidden group ${
+                className={`relative aspect-square rounded-2xl overflow-hidden group ${
                   i === 1 || i === 4 ? 'md:col-span-2 md:row-span-2' : ''
                 }`}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-12 h-12 mx-auto text-white/20 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-white/30 text-sm">Club Foto {i}</span>
-                  </div>
-                </div>
+                <Image
+                  src={`/images/clubs/club-${i}.jpg`}
+                  alt={`EXICE Club Impression ${i}`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
             ))}
