@@ -163,7 +163,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-4 md:gap-6 mb-10">
                 <div className="text-center p-3 md:p-4 bg-white/5 rounded-2xl border border-white/10">
                   <div className="text-2xl md:text-4xl font-black text-[#72add9]">5</div>
-                  <div className="text-xs md:text-sm text-gray-400 mt-1">wunderschöne Clubs</div>
+                  <div className="text-xs md:text-sm text-gray-400 mt-1">top bewertete Clubs</div>
                 </div>
                 <div className="text-center p-3 md:p-4 bg-white/5 rounded-2xl border border-white/10">
                   <div className="text-2xl md:text-4xl font-black text-[#72add9]">15k+</div>
@@ -242,7 +242,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Lokal verwurzelt</h3>
               <p className="text-gray-400">
-                Gegründet in der Region Trier & Saarland. Wir kennen den Markt und unsere Members persönlich.
+                Gegründet in der Region Trier & Saarland. Wir kennen den Markt und unsere Member persönlich.
               </p>
             </div>
 
@@ -253,9 +253,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Starke Investoren</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Inhabergeführt</h3>
               <p className="text-gray-400">
-                Finanzstarke Partner mit viel Eigenkapital. Wir haben die Mittel für schnelle Expansion.
+                Hohes Eigenkapital und finanzstarke Partner geben uns die Mittel für schnelle Expansion.
               </p>
             </div>
 
@@ -268,7 +268,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Echte Community</h3>
               <p className="text-gray-400">
-                Über 15.000 zufriedene Mitglieder in 5 wunderschönen Clubs. Bei uns trainiert man nicht alleine - man gehört dazu.
+                Über 15.000 zufriedene Mitglieder in 5 top bewerteten Clubs. Bei uns trainiert man nicht alleine - man gehört dazu.
               </p>
             </div>
           </div>
@@ -282,7 +282,11 @@ export default function Home() {
             Unsere <span className="text-[#72add9]">Clubs</span>
           </h2>
           <p className="text-gray-400 text-center mb-16">
-            Premium Equipment. Einzigartige Atmosphäre. Community Spirit.
+            Wertige Ausstattung. Einzigartige Atmosphäre. Community Spirit.
+            <br />
+            <Link href="/anforderungsprofil" className="text-[#72add9] hover:underline text-sm mt-2 inline-block">
+              Unser Anforderungsprofil ansehen &rarr;
+            </Link>
           </p>
 
           {/* Image Grid */}
@@ -319,6 +323,10 @@ export default function Home() {
             </h2>
             <p className="text-gray-400">
               Du kennst eine passende Fläche? Füll das Formular aus und sichere dir deinen Finderlohn!
+              {' '}
+              <Link href="/anforderungsprofil" className="text-[#72add9] hover:underline">
+                Anforderungsprofil ansehen
+              </Link>
             </p>
           </div>
 
